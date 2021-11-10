@@ -28,6 +28,8 @@ app.use( express.static( publicPath ) );
 
 //Mis Rutas(MIDDLEWARES)
 app.use( '/api/login', require('./routes/auth') );
+app.use( '/api/usuarios', require('./routes/usuariosRoutes') );
+app.use( '/api/mensajes', require('./routes/mensajesRoutes') );
 
 
 
